@@ -48,34 +48,34 @@ output "public_ip" {
 }
 
 
-# ## outputs for AKS test
-# output "aks_resource_group_name" {
-#   description = "Name of the AKS resource group"
-#   value       = azurerm_resource_group.aks_rg.name
-# }
+## outputs for AKS test
+output "aks_resource_group_name" {
+  description = "Name of the AKS resource group"
+  value       = azurerm_resource_group.aks_rg.name
+}
 
-# output "aks_cluster_name" {
-#   description = "Name of the AKS cluster"
-#   value       = azurerm_kubernetes_cluster.aks.name
-# }
+output "aks_cluster_name" {
+  description = "Name of the AKS cluster"
+  value       = azurerm_kubernetes_cluster.aks.name
+}
 
-# output "aks_cluster_id" {
-#   description = "ID of the AKS cluster"
-#   value       = azurerm_kubernetes_cluster.aks.id
-# }
+output "aks_cluster_id" {
+  description = "ID of the AKS cluster"
+  value       = azurerm_kubernetes_cluster.aks.id
+}
 
-# output "kube_config" {
-#   description = "Kubeconfig for the AKS cluster"
-#   value       = azurerm_kubernetes_cluster.aks.kube_config_raw
-#   sensitive   = true
-# }
+output "kube_config" {
+  description = "Kubeconfig for the AKS cluster"
+  value       = azurerm_kubernetes_cluster.aks.kube_config_raw
+  sensitive   = true
+}
 
-# output "kubernetes_version" {
-#   description = "Kubernetes version of the AKS cluster"
-#   value       = azurerm_kubernetes_cluster.aks.kubernetes_version
-# }
+output "kubernetes_version" {
+  description = "Kubernetes version of the AKS cluster"
+  value       = azurerm_kubernetes_cluster.aks.kubernetes_version
+}
 
-# output "cluster_fqdn" {
-#   description = "FQDN of the AKS cluster"
-#   value       = azurerm_kubernetes_cluster.aks.fqdn
-# }
+output "cluster_fqdn" {
+  description = "FQDN of the AKS cluster"
+  value       = azurerm_kubernetes_cluster.aks.fqdn
+}

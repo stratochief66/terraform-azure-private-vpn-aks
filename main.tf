@@ -148,4 +148,5 @@ resource "azurerm_postgresql_flexible_server" "psql_tiny" {
   private_dns_zone_id           = azurerm_private_dns_zone.psql.id
   storage_mb                    = 32768
   sku_name                      = "B_Standard_B1ms" # tiny 1vCore 2GiB mem 640 max iops
+  zone                          = 1
 }
